@@ -37,6 +37,11 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v5
 
+      - name: depot
+        uses: depot/setup-action@v1
+        
+      - uses: depot/build-push-action@v1
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
